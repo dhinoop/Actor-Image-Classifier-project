@@ -1,49 +1,89 @@
-# Actor Image Classifier 🎭
+# 🎭 Actor Image Classifier (Mammootty vs Mohanlal)
 
-A Convolutional Neural Network (CNN) model built using **TensorFlow/Keras** to classify images of two famous actors: **Mammootty** and **Mohanlal**.
+This project is a **Convolutional Neural Network (CNN)** built with **TensorFlow/Keras** that classifies images of the two legendary Malayalam actors — **Mammootty** and **Mohanlal**.  
 
-## 📌 Project Overview
-- Preprocessed images using OpenCV, NumPy, and PIL
-- Built a CNN model for binary image classification
-- Classified:
-  - `0 → Mammootty`
-  - `1 → Mohanlal`
+The model was trained on the **[Mohanlal & Mammootty Images Kaggle Dataset](https://www.kaggle.com/datasets/fillerink/mohanlal-mammooty-images)** for **100 epochs**, achieving strong accuracy in distinguishing between the two actors.  
 
-## 🗂️ Project Structure
-```
-Image_Classifier/
-│── actors.ipynb          # Main Jupyter Notebook
-│── requirements.txt      # Python dependencies
-│── README.md             # Project documentation
-│── .gitignore            # Ignored files
-└── dataset/              # Image dataset (not included in repo)
-```
+---
 
-## ⚙️ Installation & Setup
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd Image_Classifier
-   ```
+## 📂 Dataset
+- Source: [Kaggle Dataset](https://www.kaggle.com/datasets/fillerink/mohanlal-mammooty-images)  
+- Classes:  
+  - `mammootty/`  
+  - `mohanlal/`  
 
-2. Create and activate a virtual environment:
-   ```bash
-   conda create -n cnnenv python=3.9
-   conda activate cnnenv
-   ```
+### Dataset Samples
+Mammootty:  
+![Mammootty](screenshots/mammootty.png)  
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Mohanlal:  
+![Mohanlal](screenshots/mohanlal.png)  
 
-## ▶️ Usage
-Open the notebook and run all cells:
+---
+
+## 🧠 Model
+- Framework: TensorFlow / Keras  
+- Architecture: Convolutional Neural Network  
+- Training: 100 epochs  
+- Optimizer: Adam  
+- Loss: Categorical Crossentropy  
+
+---
+
+## 🚀 Features
+✔️ Classifies between Mammootty & Mohanlal  
+✔️ Works on images and webcam live feed  
+✔️ Built with TensorFlow + OpenCV  
+
+---
+
+## 📸 Results  
+
+### 🔹 Live Face Recognition
+Model tested with webcam input:  
+
+![Prediction Example 1](screenshots/live1.png)  
+![Prediction Example 2](screenshots/live2.png)  
+
+### 🔹 Training Performance
+Training accuracy & loss over 100 epochs:  
+![Training](screenshots/training.png)  
+
+---
+
+## ⚙️ Installation & Usage
 ```bash
+# Clone repository
+git clone https://github.com/your-username/Image_Classifier.git
+cd Image_Classifier
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Jupyter Notebook
 jupyter notebook actors.ipynb
 ```
 
-## 📊 Results
-The model successfully classifies images of Mammootty and Mohanlal with good accuracy.  
+For **live recognition**:
+```bash
+python live_face_recognition.py
+```
 
 ---
+
+## 📊 Training Logs
+- Epochs: 100  
+- Test Accuracy: **72.04%**  
+- Test Loss: **1.3094**  
+
+---
+
+## 📌 Future Improvements
+- Deploy as a web app (Flask/Streamlit)  
+- Add more actors for multi-class classification  
+- Try transfer learning (e.g., VGG16, ResNet)  
+
+---
+
+## 📝 License
+MIT License.  
