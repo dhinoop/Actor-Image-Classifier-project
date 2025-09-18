@@ -14,7 +14,7 @@ The model was trained on the **[Mohanlal & Mammootty Images Kaggle Dataset](http
 
 ### Dataset Samples
 Mammootty:  
-![Mammootty](screenshots/mammootty.png)  
+![Mammootty](screenshots/mammooty.png)  
 
 Mohanlal:  
 ![Mohanlal](screenshots/mohanlal.png)  
