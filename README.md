@@ -42,8 +42,8 @@ Mohanlal:
 ### 🔹 Live Face Recognition
 Model tested with webcam input:  
 
-![Prediction Example 1](screenshots/live1.png)  
-![Prediction Example 2](screenshots/live2.png)  
+![Prediction Example 1](screenshots/Live1.png)  
+![Prediction Example 2](screenshots/Live2.png)  
 
 ### 🔹 Training Performance
 Training accuracy & loss over 100 epochs:  
